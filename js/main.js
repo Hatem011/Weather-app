@@ -38,7 +38,7 @@ todayWeatherDay.innerHTML=days[date.getDay()]
 todayWeatherDate.innerHTML=`${date.getDate()} ${months[date.getMonth()]}`
 todayWeatherCity.innerHTML=apiResponse.location.name
 todayWeatherDegree.innerHTML=apiResponse.current.temp_c
-todayWeatherIcon.setAttribute("src",`http:${apiResponse.current.condition.icon}`)
+todayWeatherIcon.setAttribute("src",`https:${apiResponse.current.condition.icon}`)
 todayWeatherDescription.innerHTML=apiResponse.current.condition.text
 }
 
