@@ -21,7 +21,7 @@ var todayWeatherDay=document.getElementById("todayWeatherDay"),
 
 async function getWeatherData()
 {
-     response=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a3a24674c1da499888883158220906&q=${currentCity}&days=3&aqi=no&alerts=no`)
+     response=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a3a24674c1da499888883158220906&q=${currentCity}&days=3&aqi=no&alerts=no`)
     apiResponse=await response.json();
     console.log(apiResponse);
     displayTodayWeather();
